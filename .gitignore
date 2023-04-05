@@ -119,3 +119,6 @@ oauth_keys/
 /.env*
 /.editorconfig
 /.gitattributes
+deployment_identifier
+/travis_wait*
+/files-private

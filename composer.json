@@ -12,10 +12,14 @@
     "require": {
         "php": ">=8.1",
         "acquia/acquia-cms-starterkit": "^1",
+        "acquia/blt": "^13.0",
+        "acquia/blt-acsf": "^1.1",
         "acquia/drupal-environment-detector": "^1",
         "acquia/memcache-settings": "^1",
         "composer/installers": "^2.1",
         "cweagans/composer-patches": "^1.6",
+        "drupal/acsf": "^2.73",
+        "drupal/config_ignore": "^2.4",
         "drupal/core-composer-scaffold": "^10",
         "drupal/core-recommended": "^10",
         "drush/drush": "^11",
@@ -38,7 +42,8 @@
             "drupal/core-composer-scaffold": true,
             "ergebnis/composer-normalize": true,
             "oomphinc/composer-installers-extender": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "acquia/blt": true
         },
         "platform": {
             "php": "8.1"
@@ -52,26 +57,16 @@
                 "acquia/acquia_cms"
             ],
             "file-mapping": {
-                "[profile-root]/.editorconfig": false,
-                "[profile-root]/.gitattributes": false,
-                "[profile-root]/.travis.yml": false,
-                "[profile-root]/acquia-pipelines.yml": false,
-                "[web-root]/sites/default/default.services.yml": {
-                    "mode": "replace",
-                    "overwrite": false,
-                    "path": "docroot/core/assets/scaffold/files/default.services.yml"
-                },
-                "[web-root]/sites/default/default.settings.php": {
-                    "mode": "replace",
-                    "overwrite": false,
-                    "path": "docroot/core/assets/scaffold/files/default.settings.php"
-                }
+                "[web-root]/.htaccess": false
             },
-            "gitignore": true,
+            "gitignore": false,
             "locations": {
                 "profile-root": "docroot/profiles/contrib/acquia_cms",
                 "web-root": "docroot/"
-            }
+            },
+            "excludes": [
+                ".htaccess"
+            ]
         },
         "enable-patching": true,
         "installer-paths": {

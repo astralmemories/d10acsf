@@ -1,0 +1,24 @@
+01dev:
+    uri: site1.dev-acquiatam2.acsitefactory.com
+    host: acquiatam201dev.ssh.enterprise-g1.acquia-sites.com
+    options: {  }
+    paths: { dump-dir: /mnt/tmp }
+    root: /var/www/html/acquiatam2.01dev/docroot
+    user: acquiatam2.01dev
+    ssh: { options: '-p 22' }
+01live:
+    uri: site1.acquiatam2.acsitefactory.com
+    host: acquiatam201live.ssh.enterprise-g1.acquia-sites.com
+    options: {  }
+    paths: { dump-dir: /mnt/tmp }
+    root: /var/www/html/acquiatam2.01live/docroot
+    user: acquiatam2.01live
+    ssh: { options: '-p 22' }
+01test:
+    uri: site1.test-acquiatam2.acsitefactory.com
+    host: acquiatam201test.ssh.enterprise-g1.acquia-sites.com
+    options: {  }
+    paths: { dump-dir: /mnt/tmp }
+    root: /var/www/html/acquiatam2.01test/docroot
+    user: acquiatam2.01test
+    ssh: { options: '-p 22' }

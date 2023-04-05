@@ -1,0 +1,16 @@
+project:
+  machine_name: d10acsf
+cloud:
+  appId: 48efba74-75af-43ef-8455-32e6f043c375
+git:
+  default_branch: master
+  remotes:
+    cloud: 'acquiatam2@svn-2398.enterprise-g1.hosting.acquia.com:acquiatam2.git'
+deploy:
+  tag_source: true
+drush:
+  aliases:
+    remote: site1.01test
+    local: self
+    ci: self
+  default_alias: '${drush.aliases.local}'
