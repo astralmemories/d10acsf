@@ -1,5 +1,8 @@
 project:
   machine_name: d10acsf
+  profile:
+    name: acsfprofile
+  prefix: BLT
 cloud:
   appId: 48efba74-75af-43ef-8455-32e6f043c375
 git:
