@@ -43,6 +43,7 @@ install:
   - path
   - path_alias
   - search
+  - shield
   - shortcut
   - system
   - taxonomy
