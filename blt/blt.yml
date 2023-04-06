@@ -13,7 +13,7 @@ deploy:
   tag_source: true
 drush:
   aliases:
-    remote: site1.01test
+    remote: site2.01test
     local: self
     ci: self
   default_alias: '${drush.aliases.local}'
